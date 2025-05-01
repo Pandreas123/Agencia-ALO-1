@@ -7,6 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ALO" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -85,8 +91,8 @@
         <div class="max-w-7xl mx-auto">
             <div class="md:flex items-center">
                 <div class="md:w-1/2 mb-12 md:mb-0">
-                    <div class="typewriter mb-6">
-                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tu propia IA personalizada en 72 horas</h1>
+                    <div class="mb-6">
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight text-wrap ">Tu propia IA personalizada en 72 horas</h1>
                     </div>
                     <p class="text-xl mb-8 opacity-90">ALO crea asistentes de inteligencia artificial a medida para automatizar tus procesos de negocio, generar leads y mejorar la atención al cliente.</p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -321,36 +327,36 @@
                 </div>
                 
                 <div class="md:w-1/2 bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
-                    <form id="contact-form">
+                    <form id="contact-form" target="_blank" action="https://formsubmit.co/agenciaiaalo@gmail.com" method="POST">
                         <div class="mb-6">
                             <label for="name" class="block mb-2 font-medium">Nombre completo</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Tu nombre" required>
+                            <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Tu nombre" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="email" class="block mb-2 font-medium">Correo electrónico</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="tu@email.com" required>
+                            <input type="email" name="email" id="email" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="tu@email.com" required>
                         </div>
                         
                         <div class="mb-6">
                             <label for="company" class="block mb-2 font-medium">Empresa</label>
-                            <input type="text" id="company" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Nombre de tu empresa">
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Nombre de tu empresa">
                         </div>
                         
                         <div class="mb-6">
                             <label for="service" class="block mb-2 font-medium">¿Qué servicio te interesa?</label>
-                            <select id="service" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-white">
-                                <option value="" disabled selected>Selecciona una opción</option>
-                                <option value="agendamiento">IA para Agendamiento</option>
-                                <option value="leads">Generación de Leads</option>
-                                <option value="personalizada">IA Personalizada</option>
-                                <option value="otro">Otro</option>
+                            <select id="service" name="option" class="w-full cursor-pointer  px-4 py-3 rounded-md text-black bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 text-white">
+                                <option class="cursor-pointer text-black" value="" disabled selected>Selecciona una opción</option>
+                                <option class="cursor-pointer text-black" value="agendamiento">IA para Agendamiento</option>
+                                <option class="cursor-pointer text-black" value="leads">Generación de Leads</option>
+                                <option class="cursor-pointer text-black" value="personalizada">IA Personalizada</option>
+                                <option class="cursor-pointer text-black" value="otro">Otro</option>
                             </select>
                         </div>
                         
                         <div class="mb-6">
                             <label for="message" class="block mb-2 font-medium">Mensaje</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                         </div>
                         
                         <button type="submit" class="w-full bg-white text-purple-600 hover:bg-gray-100 px-6 py-3 rounded-md text-lg font-semibold transition duration-300">Enviar mensaje</button>
@@ -409,7 +415,7 @@
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/agencia_alo/" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -422,11 +428,11 @@
         });
 
         // Form submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-            this.reset();
-        });
+        // document.getElementById('contact-form').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+        //     this.reset();
+        // });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
